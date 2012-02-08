@@ -1,0 +1,23 @@
+
+
+Started GET "/assets/rails.png" for 74.72.2.158 at 2012-01-27 14:40:54 -0800
+Served asset /rails.png - 200 OK (33ms)
+
+
+Started GET "/assets/rails.png" for 174.127.184.114 at 2012-01-27 14:40:55 -0800
+Served asset /rails.png - 200 OK (0ms)
+
+
+Started GET "/someshit" for 174.127.184.114 at 2012-01-27 14:42:38 -0800
+
+ActionController::RoutingError (No route matches [GET] "/someshit"):
+  
+
+Rendered /usr/local/rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (18.4ms)
+  [1m[36m (116.2ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (9.5ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.6ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePosts (20120130234907)
+  [1m[35m (3.7ms)[0m  CREATE TABLE `posts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `title` varchar(255), `content` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120130234907')[0m
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
